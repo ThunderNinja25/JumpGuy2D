@@ -342,7 +342,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1008390662}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Restart
+        m_MethodName: Restart1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -626,6 +626,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 0}
   nextLevelScreen: {fileID: 0}
+  levelLoad:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1008390663
 Transform:
   m_ObjectHideFlags: 0

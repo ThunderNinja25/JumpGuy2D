@@ -34,6 +34,6 @@ public class Beetle : MonoBehaviour
 
     private void Move()
     {
-        beetleRB.AddForce(transform.forward * beetleSpeed * Time.deltaTime);
+        beetleRB.AddForce(Vector2.left * beetleSpeed * Time.deltaTime);
     }
 }

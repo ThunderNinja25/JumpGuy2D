@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private GameObject nextLevelScreen;
     private GameManager gameManager;
+    [SerializeField] private UnityEvent levelLoad;
     
     void Start()
     {
@@ -36,9 +38,14 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
-    public void Restart()
+    public void Restart1()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void Restart2()
+    {
+        SceneManager.LoadScene(2);
     }
 
     public void ReturnToMainMenu()
