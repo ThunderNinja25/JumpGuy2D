@@ -30,10 +30,17 @@ public class Beetle : MonoBehaviour
             cameraDeath.gameObject.SetActive(true);
             uiManager.PlayerDead();
         }
+
+        if (other.collider.CompareTag("Pipes"))
+        {
+            beetleRB.transform.Rotate(0,180,0);
+            //beetleRB.AddForce(Vector2.right * beetleSpeed * Time.deltaTime);
+            
+        }
     }
 
     private void Move()
-    {
+    { 
         beetleRB.AddForce(Vector2.left * beetleSpeed * Time.deltaTime);
     }
 }

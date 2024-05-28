@@ -36,8 +36,5 @@ public class Coins : MonoBehaviour
             ScoreManager.instance.ChangeScore(coinValue);
             
         }
-        
-        
-
     }
 }
